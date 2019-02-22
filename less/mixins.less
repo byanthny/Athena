@@ -1,7 +1,16 @@
-.League-Font {
+.Heading-Font {
 	@font-face{
-		font-family: : 'League';
-		src: url('{@League-Location}');
+		font-family: : '{@Heading-Font}';
+		src: url('{@Heading-Font-Location}');
+		font-weight: @default-font-weight;
+		font-style: @default-font-style;
+	}
+}
+
+.Body-Font {
+	@font-face{
+		font-family: : '{@Body-Font}';
+		src: url('{@Body-Font-Location}');
 		font-weight: @default-font-weight;
 		font-style: @default-font-style;
 	}
