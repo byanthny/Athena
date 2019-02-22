@@ -1,19 +1,33 @@
 //Variables for all elements
 //
-// Use naming formula element-property-state-size
+// Use naming formula element-state-property-size
 // Ex. card-width and button-color-dark
 
 //Color Scheme
-
-@white: #ffffff;
-@black: #000000;
-@grey-10: something;
-@grey-20: something;
-
-@blue: ;
-@purple: ;
-
 colors() {
-	blue: @blue;
-	purple: @purple;
+	white: #ffffff;
+	pure-black: #000000;
+	black: #262626;
+	blue: ;
+	purple: #8B8BD3;
+	red: #B46565;
+	pink: ;
+	teal: #8AC0C7;
 }
+
+@color-primary: colors[white];
+@color-secondary: colors[purple];
+
+@default-font: ; //League Spartan
+
+@border-width: .9375rem; //about 15px
+
+//Global Border Styling
+@border-width: ;
+@border-radius: ;
+
+//Cards
+@card-light-bg: colors[white];
+@card-dark-bg: colors[black];
+@card-border-radius: @border-width;
+@card-border-width: @border-radius;
