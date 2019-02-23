@@ -5,8 +5,9 @@
 // Ex. card-width and button-color-dark
 
 //Color Scheme
-colors() {
+#colors() {
 	white: #ffffff;
+	offwhite: #f9f9f9;
 	pure-black: #000000;
 	black: #262626;
 	blue: #668ed8;
@@ -24,8 +25,9 @@ colors() {
 @breakpoint-xl: 1800px;
 
 //Default Colors
-@color-primary: colors[white];
-@color-secondary: colors[purple];
+@color-base: #colors[offwhite];
+@color-primary: #colors[white];
+@color-secondary: #colors[purple];
 
 //Default Font Styling
 @default-font-style: normal;
@@ -34,23 +36,23 @@ colors() {
 @font-bold-weight: 600;
 
 //Default Fonts
-@heading-Font: 'League';
-@heading-Font-Location: 'fonts/League.otf';
+@heading-font: 'League';
+@heading-font-location: 'fonts/League.otf';
 /* Not supported by League-Spartan
-@heading-font_bold-location: '';
+@heading-font-bold-location: '';
 @heading-font-italic-location: '';
 @heading-font-italic-bold-location: '';
 */
 
 @body-font: 'Open Sans';
 @body-font-location: 'fonts/OpenSans.ttf';
-@body-font_bold-location: 'fonts/OpenSansBold.ttf';
+@body-font-bold-location: 'fonts/OpenSansBold.ttf';
 @body-font-italic-location: 'fonts/OpenSansItalic.ttf';
 @body-font-italic-bold-location: 'fonts/OpenSansItalicBold.ttf';
 
 //Global Border Styling
 @border-width: .9375rem; //about 15px
-@border-radius: ;
+@border-radius: 5px;
 
 //Cards
 @card-light-bg: colors[white];
