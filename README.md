@@ -1,8 +1,9 @@
 # Athena
-Mobile first oriented web framework.
+Mobile first oriented web framework. Aimed at creating modern design easily. idk
 Fun project for fun.
 
 
+---
 ### File Structure
 **dist** [minifed versions of all compiled files].   
 **src** [all source files for javascript and less].   
@@ -10,7 +11,7 @@ Fun project for fun.
 |---->**less** [pre-compile css files].   
 ------|---->**elements** [holds all less files for the elements].   
 **site** [source files for documentation website].   
-
+---
 ### Credits
 * Boostrap
 * Clique.UI
