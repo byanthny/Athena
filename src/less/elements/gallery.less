@@ -1,0 +1,32 @@
+//Styling for Gallery and Images
+
+//General Styling
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+	.gallery-col {
+		flex: @gallery-col-width;
+		max-width: @gallery-col-width;
+
+		@media (max-width: @breakpoint-md - 1) {
+			flex: 100%;
+			max-width: 100%;
+		}
+
+		img {
+			.boxshadow();
+			.transition();
+			margin-top: @default-spacing;
+			width: 100%;
+
+			&:hover {
+				.grow();
+			}
+
+		}
+	}
+
+}
