@@ -19,8 +19,14 @@
 }
 
 //Gradients
+@grad-deg: 20deg; //Gradient Degree
+
 #gradients() {
-	pink-orange: linear-gradient(20deg, #FF8993, #FEC180);
+	pink-orange: linear-gradient(@grad-deg, #FF8993, #FEC180);
+	yellow-magenta: linear-gradient(@grad-deg, #f7ff00, #db36a4); //uiGradients
+	purple-white: linear-gradient(@grad-deg, #BA5370, #F4E2D8); //uiGradients
+	teal-white: linear-gradient(@grad-deg, #4CA1AF, #C4E0E5); //uiGradients
+	black-grey: linear-gradient(@grad-deg, #000000, #434343); //uiGradients
 }
 
 //Default Colors

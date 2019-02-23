@@ -9,3 +9,8 @@ Fun project for fun.
 	  --> **src** [source files for javascript]
 	**less** [pre-compile css files]
 	**site** [source files for documentation website]
+
+###Credits
+	1. Boostrap
+	2. Clique.UI
+	3. uiGradients
