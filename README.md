@@ -8,7 +8,7 @@ Fun project for fun.
 **src** [all source files for javascript and less].   
 |---->**js** [all javascript source and compiled files].   
 |---->**less** [pre-compile css files].   
-      |---->**elements** [holds all less files for the elements].   
+------|---->**elements** [holds all less files for the elements].   
 **site** [source files for documentation website].   
 
 ### Credits
