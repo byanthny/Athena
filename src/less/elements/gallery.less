@@ -3,13 +3,16 @@
 //General Styling
 
 .gallery {
+	postion: realtive;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 
 	.gallery-col {
-		flex: @gallery-col-width;
-		max-width: @gallery-col-width;
+		flex: @gallery-col-width*100;
+		max-width: @gallery-col-width*100%;
+		padding-left: @default-spacing;
+		padding-right: @default-spacing;
 
 		@media (max-width: @breakpoint-md - 1) {
 			flex: 100%;
@@ -19,7 +22,7 @@
 		img {
 			.box-shadow();
 			.transition();
-			margin-top: @default-spacing;
+			margin-bottom: @default-spacing;
 			width: 100%;
 
 			&:hover {
