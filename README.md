@@ -6,7 +6,6 @@ Fun project for fun.
 
 ### File Structure
 
-```text
 Athena/ 
 ├── dist/   
 │   ├── css/     
@@ -33,7 +32,6 @@ Athena/
         ├── mixins.less
         ├── text.less
  	 	└── variables.less
- 	 	```
 ---
 
 ### Credits
