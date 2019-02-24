@@ -41,6 +41,15 @@ Athena/
  	└── variables.less
 ```
 
+## Upcoming Elements
+* Navbar
+* Typography base header
+* Broken Grid Styling
+* Rating
+* Buttons
+* Pop-Ups
+* Ads?
+
 ## Credits
 * [Boostrap](https://github.com/twbs/bootstrap), Used for reference
 * [Clique.UI](https://github.com/CliqueStudios/Clique.UI), Used for reference
