@@ -12,6 +12,32 @@ Fun project for fun.
 ------|---->**elements** [holds all less files for the elements].   
 **site** [source files for documentation website].   
 
+**Athena/**
+├── **dist/**
+│   ├── **css/**
+│   │   ├── athena.css
+│	│	└── athena.min.css
+│   └── **js/**
+│       ├── athena.js
+│	 	└── athena.min.js
+│
+├── **site/**
+│	└── to be added
+│
+└──	**src/**
+    ├── **font/**
+    ├── **imgs/**
+    ├── **js/**
+	└── **less/**
+		├── **elements/**
+		│   ├── card.less
+		│	├── gallery.less	    
+ 	 	│	└── images.less
+        ├── athena.less
+        ├── global.less
+        ├── mixins.less
+        ├── text.less
+ 	 	└── variables.less
 ---
 
 ### Credits
