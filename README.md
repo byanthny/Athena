@@ -6,24 +6,24 @@ Fun project for fun.
 
 ### File Structure
 
-**Athena/**  
-├── **dist/**   
-│   ├── **css/**     
+**Athena/** 
+├── dist/   
+│   ├── css/     
 │   │   ├── athena.css   
 │	│	└── athena.min.css    
-│   └── **js/**   
+│   └── js/   
 │       ├── athena.js   
 │	 	└── athena.min.js   
 │
-├── **site/**   
+├── site/   
 │	└── to be added   
 │
-└──	**src/**    
-    ├── **font/**   
-    ├── **imgs/**
-    ├── **js/**
-	└── **less/**
-		├── **elements/**
+└──	src/    
+    ├── font/   
+    ├── imgs/
+    ├── js/
+	└── less/
+		├── elements/
 		│   ├── card.less
 		│	├── gallery.less	    
  	 	│	└── images.less
