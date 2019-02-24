@@ -1,5 +1,15 @@
 //Styling for Images
 
+.img-hover() {
+	&-grow {
+		.grow()
+	}
+
+	&-fade {
+		.fade()
+	}
+}
+
 .img {
 
 	vertical-align: middle;
@@ -7,17 +17,21 @@
 	&-border {
 		//border stuff
 
+		border: @border-width @border-style @img-border-color;
+		border-radius: @img-border-radius;
+
+		img-hover();
 
 		&-shadow {
 			.box-shadow();
+			img-hover();
 		}
 
 	}
 
 	&-shadow {
 		.boxshadow();
+		img-hover();
 	}
 }
-
-//hover grow and opcacity
 
