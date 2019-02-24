@@ -9,16 +9,25 @@
 	//max-width: 500px;
 	//width: 100%;
 	word-wrap: break-word;
+
+	& .img {
+		width: 100%
+		margin-bottom: @default-spacing;
+	}
 }
 
 //Dark version of the card
 .card-light {
 	&:extend(.card all);
 	background-color: @card-light-bg;
+
+	.light-text()
 }
 
 //Light version of the card
 .card-dark {
 	.card();
 	background-color: @card-dark-bg;
+
+	.dark-text()
 }
