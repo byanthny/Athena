@@ -6,20 +6,20 @@ Fun project for fun.
 
 ### File Structure
 
-**Athena/**
-├── **dist/**
-│   ├── **css/**
-│   │   ├── athena.css
-│	│	└── athena.min.css
-│   └── **js/**
-│       ├── athena.js
-│	 	└── athena.min.js
+**Athena/**  
+├── **dist/**   
+│   ├── **css/**     
+│   │   ├── athena.css   
+│	│	└── athena.min.css    
+│   └── **js/**   
+│       ├── athena.js   
+│	 	└── athena.min.js   
 │
-├── **site/**
-│	└── to be added
+├── **site/**   
+│	└── to be added   
 │
-└──	**src/**
-    ├── **font/**
+└──	**src/**    
+    ├── **font/**   
     ├── **imgs/**
     ├── **js/**
 	└── **less/**
