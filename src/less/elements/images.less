@@ -1,44 +1,36 @@
 //Styling for Images
 
-//Mixin for image hover
-.img-hover() {
-	&:hover .grow{
+.img {
+	width: 100%;
+	vertical-align: middle;
+
+	transition: @img-transition;
+	
+	&.grow:hover {
 		.grow()
 	}
 
-	&:hover .fade{
-			.fade()
+	&.fade:hover {
+		.fade();
 	}
+
 }
 
-.img-base-border() {
+.img-border {
 
-	.img();
+	&:extend(.img all);
 
 	border: @border-width @border-style;
 	border-radius: @img-border-radius;
 	border-color: @img-border-color
 }
 
-.img {
-	width: 100%;
-	&:hover {
-		.grow()
-
-	}
-
-}
-& .img-border {
-	.img-base-border();
-}
-
-& .img-shadow {
-	.img();
+.img-border-shadow {
+	&:extend(.img-border all);
 	.box-shadow();
 }
 
-
-& .img-border-shadow {
-	.img-base-border();
+.img-shadow {
+	&:extend(.img all);
 	.box-shadow();
 }
