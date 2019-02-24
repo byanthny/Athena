@@ -1,32 +1,34 @@
 //Styling for Gallery and Gallery Images
 
 //General Styling
-
 .gallery {
 	postion: realtive;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 
+	//Styling for individual gallery columns
 	.gallery-col {
 		flex: @gallery-col-width*100;
 		max-width: @gallery-col-width*100%;
 		padding-left: @default-spacing;
 		padding-right: @default-spacing;
 
+		//On devices below @breakpoint-md make the columns full width
 		@media (max-width: @breakpoint-md - 1) {
 			flex: 100%;
 			max-width: 100%;
 		}
 
+		//Styling for gallery images
 		img {
-			.box-shadow();
-			.transition();
+			.box-shadow(); //add shadow
+			.transition(); //add transition
 			margin-bottom: @default-spacing;
 			width: 100%;
 
 			&:hover {
-				.grow();
+				.grow(); //grow on hover
 			}
 
 		}
