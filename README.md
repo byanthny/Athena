@@ -50,6 +50,7 @@ Athena/
 * Buttons
 * Pop-Ups
 * Ads?
+* Side Sticky
 
 ## Credits
 * [Boostrap](https://github.com/twbs/bootstrap), Used for reference
