@@ -11,28 +11,28 @@ Athena/
 ├── dist/
 │   ├── css/
 │   │   ├── athena.css
-│	│	└── athena.min.css
+│   │	└── athena.min.css
 │   └── js/
 │       ├── athena.js
-│	 	└── athena.min.js
+│	└── athena.min.js
 │
 ├── site/
-│	└── to be added
+│   └── to be added
 │
-└──	src/
+└── src/
     ├── font/
     ├── imgs/
     ├── js/
 	└── less/
-		├── elements/
-		│   ├── card.less
-		│	├── gallery.less
- 	 	│	└── images.less
+        ├── elements/
+	│   ├── card.less
+	│   ├── gallery.less
+ 	│   └── images.less
         ├── athena.less
         ├── global.less
         ├── mixins.less
         ├── text.less
- 	 	└── variables.less
+ 	└── variables.less
 ```
 ---
 
