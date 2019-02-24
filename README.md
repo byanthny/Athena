@@ -6,7 +6,7 @@ Fun project for fun.
 
 ### File Structure
 
-**Athena/** 
+Athena/ 
 ├── dist/   
 │   ├── css/     
 │   │   ├── athena.css   
