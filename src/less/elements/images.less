@@ -2,36 +2,44 @@
 
 //Mixin for image hover
 .img-hover() {
-	&-grow {
+	&:hover .grow{
 		.grow()
 	}
 
-	&-fade {
-		.fade()
+	&:hover .fade{
+			.fade()
 	}
+}
+
+.img-base-border() {
+
+	.img();
+
+	border: @border-width @border-style;
+	border-radius: @img-border-radius;
+	border-color: @img-border-color
 }
 
 .img {
-
-	vertical-align: middle;
-
-	&-border {
-
-		border: @border-width @border-style @img-border-color;
-		border-radius: @img-border-radius;
-
-		img-hover();
-
-		&-shadow {
-			.box-shadow();
-			img-hover();
-		}
+	width: 100%;
+	//max-width: 100px;
+	&:hover {
+		.grow()
 
 	}
 
-	&-shadow {
-		.boxshadow();
-		img-hover();
-	}
+}
+& .img-border {
+	.img-base-border();
 }
 
+& .img-shadow {
+	.img();
+	.box-shadow();
+}
+
+
+& .img-border-shadow {
+	.img-base-border();
+	.box-shadow();
+}
