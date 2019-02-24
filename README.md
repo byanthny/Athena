@@ -40,6 +40,6 @@ Athena/
 ```
 
 ## Credits
-* Boostrap
-* Clique.UI
-* uiGradients
+* [Boostrap](https://github.com/twbs/bootstrap), Used for reference
+* [Clique.UI](https://github.com/CliqueStudios/Clique.UI), Used for reference
+* [uiGradients](https://uigradients.com/), Used to create gradient combinations
