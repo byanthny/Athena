@@ -31,8 +31,9 @@ Athena/
         ├── elements/
 	│   ├── card.less
 	│   ├── gallery.less
-    │   ├── images.less
+        │   ├── images.less
  	│   └── links.less
+	│
         ├── athena.less
         ├── global.less
         ├── mixins.less
