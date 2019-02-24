@@ -6,6 +6,7 @@ Fun project for fun. Focused on making website buestiful out the box =, with mul
 
 ## Table of Contents
 * [File Structure](#file-structure)
+* [Upcoming Elements](#upcoming-elements)
 * [Credits](#credits)
 
 ## File Structure
