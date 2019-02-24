@@ -4,7 +4,11 @@ Fun project for fun.
 
 ---
 
-### File Structure
+##Table of Contents
+* [File Structure](#file-structure)
+* [Credits](#credits)
+
+# File Structure
 
 ```text
 Athena/
@@ -34,9 +38,8 @@ Athena/
         ├── text.less
  	└── variables.less
 ```
----
 
-### Credits
+# Credits
 * Boostrap
 * Clique.UI
 * uiGradients
