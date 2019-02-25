@@ -3,8 +3,7 @@
 </p>
 
 # Athena
-Mobile first oriented web framework. Aimed at creating modern design easily. idk
-Fun project for fun. Focused on making website buestiful out the box =, with multiple choices and modern design in mind. 
+A mobile oriented web framework aimed at creating beautiful modern design effortlessly. 
 
 ---
 
