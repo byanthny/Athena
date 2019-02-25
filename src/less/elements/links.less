@@ -9,18 +9,34 @@ a {
 }
 
 .link-styled() {
-	padding: @link-padding;
+	padding: @link-spacing;
 }
 
-.link-styled-dark {
+.link-dark {
+	background-color: ;
+	.dark-text();
+	border-color: @
 	&:hover {
 		&:extend(.link-styled-light);
 
 	}
 }
 
-.link-styled-light {
+.link-light {
 	&:hover {
 		&:extend(.link-styled-dark);
 	}
 }
+
+each(@link-custom, { 
+	.link-@{key} {
+		background-color: #colors[@{key}];
+		color: #colors[@{value}];
+		&:hover {
+			background-color: darken(#colors[@{value}], 20%);
+		}
+	}
+});
+
+//light dark
+//list funtion that darkens all when hover
