@@ -1,4 +1,5 @@
-![logo](site/imgs/logo.svg)
+
+<img src="site/imgs/logo.svg" width="80"/>
 
 # Athena
 Mobile first oriented web framework. Aimed at creating modern design easily. idk
