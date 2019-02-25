@@ -1,5 +1,5 @@
 
-<img src="site/imgs/logo.svg" width="80"/>
+<img src="site/imgs/logo.svg" width="100"/>
 
 # Athena
 Mobile first oriented web framework. Aimed at creating modern design easily. idk
