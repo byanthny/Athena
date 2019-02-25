@@ -1,3 +1,5 @@
+<img src="site/imgs/logo.png" style="text-align: center;"/>
+
 # Athena
 Mobile first oriented web framework. Aimed at creating modern design easily. idk
 Fun project for fun. Focused on making website buestiful out the box =, with multiple choices and modern design in mind. 
