@@ -26,7 +26,8 @@ Athena/
 │	└── athena.min.js
 │
 ├── site/
-│   └── to be added
+│   └── imgs/
+│   	└── logo.svg
 │
 └── src/
     ├── font/
