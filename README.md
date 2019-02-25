@@ -1,6 +1,4 @@
-<div style="width: 100%; text-align: center; margin:0 auto;">
-<img src="site/imgs/logo.svg" style="width: 80; height: 80px; background-size: 80px 80px;"/>
-</div>
+![logo](site/imgs/logo.svg)
 
 # Athena
 Mobile first oriented web framework. Aimed at creating modern design easily. idk
