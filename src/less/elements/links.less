@@ -1,1 +1,26 @@
 //Styling for links
+
+a {
+	text-decoration: none;
+	color: #colors[black];
+	&:hover {
+		text-decoration: @link-hover-decoration;
+	}
+}
+
+.link-styled() {
+	padding: @link-padding;
+}
+
+.link-styled-dark {
+	&:hover {
+		&:extend(.link-styled-light);
+
+	}
+}
+
+.link-styled-light {
+	&:hover {
+		&:extend(.link-styled-dark);
+	}
+}
