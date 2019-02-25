@@ -4,6 +4,7 @@
 
 # Athena
 A mobile oriented web framework aimed at creating beautiful modern design effortlessly. 
+A personal project I'm working on for fun. Feel free to use any of it as you wish.
 
 ---
 
