@@ -1,5 +1,5 @@
 <div style="width: 100%; text-align: center; margin:0 auto;">
-<img src="site/imgs/logo.svg" style="width: 80"/>
+<img src="site/imgs/logo.svg" style="width: 80; height: 80px"/>
 </div>
 
 # Athena
