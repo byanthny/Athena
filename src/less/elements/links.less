@@ -14,15 +14,16 @@ a {
 //Styling for styled-links
 .link-styled() {
 	.transition();
-	.box-shadow();
+
+	.box-shadow-harsh();
 
 	padding: @link-spacing/4 @link-spacing; //top padding 1/4 the horizontal
 	margin: @link-spacing/4 @link-spacing; //top margin 1/4 the horizontal
+	border-radius: @link-border-radius;
 }
 
 .link-styled-hover() {
 	border: @link-border-width @border-style;
-	border-radius: @link-border-radius;
 	text-decoration: @link-styled-hover-decoration;
 }
 
@@ -58,14 +59,6 @@ a {
 
 //Custom colored links that darken on hover. 
 //Created from @link-custom set.
-.link-custom-hover() {
-	border: @link-custom-border-width @border-style;
-	border-radius: @link-border-radius;
-	text-decoration: @link-custom-hover-decoration;
-}
-
-
-//Can easily be altered to show border on hover or use buttons
 each(@link-custom, { 
 
 	.link-@{key} {
@@ -73,12 +66,13 @@ each(@link-custom, {
 
 		background-color: #colors[$@key];
 		color: #colors[$@value];
-		//border-color: @value;
-		border: @link-custom-border-width @border-style transparent;
+		//border: @link-border-width @border-style transparent; //uncomment to add border on hover 
+		//border-radius: @link-border-radius;
 
 		&:hover {
-			.link-custom-hover();
-			background-color: darken(#colors[$@key], 20%);
+			text-decoration: @link-custom-hover-decoration;
+			background-color: darken(#colors[$@key], @link-darken); //darken by 10%
+			//border-color: @value; //uncomment to add border on hover. Border color is the same as text color 
 		}
 	}
 });

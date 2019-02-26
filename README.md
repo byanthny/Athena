@@ -3,7 +3,7 @@
 </p>
 
 # Athena v0.0.1
-A mobile oriented web framework aimed at creating beautiful modern design effortlessly. 
+A mobile oriented web framework aimed at creating beautiful modern design effortlessly. Focused on endless customizability, by simply changing the variables in the variables.less file for almost every element without having to open mutliple files. 
 A personal project I'm working on for fun. Feel free to use any of it as you wish.
 
 ---
