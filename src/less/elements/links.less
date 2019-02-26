@@ -4,6 +4,8 @@
 a {
 	text-decoration: none;
 	color: #colors[black];
+	font-family: @body-font;
+
 	&:hover {
 		text-decoration: @link-hover-decoration;
 	}
@@ -12,9 +14,10 @@ a {
 //Styling for styled-links
 .link-styled() {
 	.transition();
+	.box-shadow();
 
-	padding: @link-spacing;
-	margin: @link-spacing;
+	padding: @link-spacing/4 @link-spacing; //top padding 1/4 the horizontal
+	margin: @link-spacing/4 @link-spacing; //top margin 1/4 the horizontal
 }
 
 .link-styled-hover() {
@@ -30,9 +33,10 @@ a {
 
 	background-color: @link-dark-bg;
 	border-color: @link-light-bg;
+	border: @link-border-width @border-style transparent;
 
 	&:hover {
-		&:extend(.link-styled-light);
+		&:extend(.link-light);
 		.link-styled-hover();
 	}
 }
@@ -44,9 +48,10 @@ a {
 
 	background-color: @link-light-bg;
 	border-color: @link-dark-bg;
+	border: @link-border-width @border-style transparent;
 
 	&:hover {
-		&:extend(.link-styled-dark);
+		&:extend(.link-dark);
 		.link-styled-hover();
 	}
 }
@@ -59,16 +64,21 @@ a {
 	text-decoration: @link-custom-hover-decoration;
 }
 
+
+//Can easily be altered to show border on hover or use buttons
 each(@link-custom, { 
+
 	.link-@{key} {
 		.link-styled();
 
-		background-color: #colors[@{key}];
-		color: #colors[@{value}];
+		background-color: #colors[$@key];
+		color: #colors[$@value];
+		//border-color: @value;
+		border: @link-custom-border-width @border-style transparent;
 
 		&:hover {
 			.link-custom-hover();
-			background-color: darken(#colors[@{key}], 20%);
+			background-color: darken(#colors[$@key], 20%);
 		}
 	}
 });
