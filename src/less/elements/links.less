@@ -1,5 +1,6 @@
 //Styling for links
 
+//General Link Styling
 a {
 	text-decoration: none;
 	color: #colors[black];
@@ -8,35 +9,66 @@ a {
 	}
 }
 
+//Styling for styled-links
 .link-styled() {
+	.transition();
+
 	padding: @link-spacing;
+	margin: @link-spacing;
 }
 
+.link-styled-hover() {
+	border: @link-border-width @border-style;
+	border-radius: @link-border-radius;
+	text-decoration: @link-styled-hover-decoration;
+}
+
+//Dark link that tranistions to light on hover
 .link-dark {
-	background-color: ;
+	.link-styled();
 	.dark-text();
-	border-color: @
+
+	background-color: @link-dark-bg;
+	border-color: @link-light-bg;
+
 	&:hover {
 		&:extend(.link-styled-light);
-
+		.link-styled-hover();
 	}
 }
 
+//Light link that tranistions to dark on hover
 .link-light {
+	.link-styled();
+	.light-text();
+
+	background-color: @link-light-bg;
+	border-color: @link-dark-bg;
+
 	&:hover {
 		&:extend(.link-styled-dark);
+		.link-styled-hover();
 	}
+}
+
+//Custom colored links that darken on hover. 
+//Created from @link-custom set.
+.link-custom-hover() {
+	border: @link-custom-border-width @border-style;
+	border-radius: @link-border-radius;
+	text-decoration: @link-custom-hover-decoration;
 }
 
 each(@link-custom, { 
 	.link-@{key} {
+		.link-styled();
+
 		background-color: #colors[@{key}];
 		color: #colors[@{value}];
+
 		&:hover {
-			background-color: darken(#colors[@{value}], 20%);
+			.link-custom-hover();
+			background-color: darken(#colors[@{key}], 20%);
 		}
 	}
 });
-
-//light dark
-//list funtion that darkens all when hover
