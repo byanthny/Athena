@@ -33,10 +33,6 @@
 		&:extend(.card-header);
 		margin-bottom: @card-heading-overlap;
 		margin-left: @card-heading-overlap;
-
-		.card-header:parent { //make parent shift
-			margin-left: @default-spacing + (@card-heading-overlap * -1);
-		}	
 	}
 
 	& img { //add image to card
