@@ -19,11 +19,11 @@ A personal project I'm working on for fun. Feel free to use any of it as you wis
 Athena/
 ├── dist/
 │   ├── css/
-│   │   ├── athena.css
-│   │	└── athena.min.css
+│   │   ├── athena.css //To be added
+│   │	└── athena.min.css //To be added
 │   └── js/
-│       ├── athena.js
-│	└── athena.min.js
+│       ├── athena.js //To be added
+│	└── athena.min.js //To be added
 │
 ├── site/
 │   └── imgs/
@@ -40,11 +40,13 @@ Athena/
 	│   ├── gallery.less
         │   ├── images.less
  	│   └── links.less
-	│
+ 	│
+        ├── shortcuts/
+	│   ├── mixins.less
+ 	│   └── text.less
+ 	│
         ├── athena.less
         ├── global.less
-        ├── mixins.less
-        ├── text.less
  	└── variables.less
 ```
 
