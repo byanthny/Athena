@@ -1,33 +1,64 @@
 //Styling for the Card Element
 
 //General styling
-.card {
-	.box-shadow();
-	font-family: @body-font;
+.card-header {
+	font-family: @heading-font;
 	font-style: @default-font-style;
 	font-weight: @default-font-weight;
-	//max-width: 500px;
-	//width: 100%;
-	word-wrap: break-word;
+}
 
-	& .img {
-		width: 100%
-		//margin-bottom: @default-spacing;
+.card {
+	margin: @default-spacing;
+
+	.card-body {
+		.box-shadow();
+		font-family: @body-font;
+		font-style: @default-font-style;
+		font-weight: @default-font-weight;
+		max-width: @card-max-width;
+		padding: @default-spacing;
+		word-wrap: break-word;
+		text-align: center;
+		margin: 0;
+
+		& .card-header {
+			&:extend(.card-header);
+			margin-bottom: 0;
+			margin-left: 0;
+		}
 	}
+
+	& .card-header {
+		//make header overlap card
+		&:extend(.card-header);
+		margin-bottom: @card-heading-overlap;
+		margin-left: @card-heading-overlap;
+	}
+
+	& > img { //add image to card
+		width: 100%;
+		margin-bottom: @default-spacing;
+	}
+
 }
 
 //Dark version of the card
 .card-light {
 	&:extend(.card all);
+
+	.card-body {
 	background-color: @card-light-bg;
+	}
 
 	.light-text();
 }
 
 //Light version of the card
 .card-dark {
-	.card();
-	background-color: @card-dark-bg;
-
+	&:extend(.card all);
+	
+	.card-body {
+		background-color: @card-dark-bg;
+	}
 	.dark-text();
 }
