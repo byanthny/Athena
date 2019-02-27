@@ -1,15 +1,17 @@
 //Styling for the Card Element
 
-//General styling
+//General styling for title of card
 .card-header {
 	font-family: @heading-font;
 	font-style: @default-font-style;
 	font-weight: @default-font-weight;
 }
 
+//General Card Styling
 .card {
 	margin: @default-spacing;
 
+	//Styling of card body
 	.card-body {
 		.box-shadow();
 		font-family: @body-font;
@@ -21,6 +23,7 @@
 		text-align: center;
 		margin: 0;
 
+		//When the card title is inside the bodt
 		& .card-header {
 			&:extend(.card-header);
 			margin-bottom: 0;
@@ -28,6 +31,7 @@
 		}
 	}
 
+	//When the card title is "outside" of the card body
 	& .card-header {
 		//make header overlap card
 		&:extend(.card-header);
@@ -35,6 +39,7 @@
 		margin-left: @card-heading-overlap;
 	}
 
+	//style card images, refer to images for more styling
 	& img { //add image to card
 		width: 100%;
 		margin-bottom: @default-spacing;
@@ -45,20 +50,20 @@
 //Dark version of the card
 .card-light {
 	&:extend(.card all);
+	.light-text();
 
 	.card-body {
 	background-color: @card-light-bg;
 	}
 
-	.light-text();
 }
 
 //Light version of the card
 .card-dark {
 	&:extend(.card all);
-	
+	.dark-text();
+
 	.card-body {
 		background-color: @card-dark-bg;
 	}
-	.dark-text();
 }
