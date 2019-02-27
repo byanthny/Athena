@@ -61,3 +61,4 @@ Athena/
 * [Boostrap](https://github.com/twbs/bootstrap), Used for reference
 * [Clique.UI](https://github.com/CliqueStudios/Clique.UI), Used for reference
 * [uiGradients](https://uigradients.com/), Used to create gradient combinations
+* [Circle Image Implementation](https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3)
