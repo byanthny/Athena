@@ -98,17 +98,15 @@
 @gallery-col-width: (1/@gallery-cols);//divide into gallery-cols sections
 
 //Links
-@link-border-radius: 0.125rem;
-@link-border-width: 0.125rem;
+@link-border-radius: 0rem;
+@link-decoration: underline;
 @link-hover-decoration: line-through;
 @link-spacing: .625rem;
 
 //Styled Links
-@link-light-bg: #colors[white];
-@link-dark-bg: #colors[black];
-@link-styled-hover-decoration: line-through;
+@link-styled-decoration: underline;
+@link-styled-hover-decoration: none;
+@link-styled-transition: background .3s ease-out, color .3s ease-in, box-shadow .5s ease-out .3s;
 
 //For custom auto-created link styles
-@link-custom: {blue: white; purple: white; teal: white}; //color names must be found in colors map. Format background-color: text color;
-@link-custom-hover-decoration: line-through;
-@link-darken: 10%;
+@link-custom: {blue: white; purple: white; teal: white; black: white; white: black;}; //color names must be found in colors map. Format background-color: text color;
