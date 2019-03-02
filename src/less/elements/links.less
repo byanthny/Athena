@@ -2,41 +2,44 @@
 
 //General Link Styling
 a {
-	text-decoration: @link-decoration;
-	color: #colors[black];
-	font-family: @body-font;
+  text-decoration: @link-decoration;
+  color: #colors[black];
+  font-family: @body-font;
 
-	&:hover {
-		text-decoration: @link-hover-decoration;
-	}
+  &:hover {
+    text-decoration: @link-hover-decoration;
+  }
 }
 
 //Styling for styled-links
 .link-styled() {
 
-	padding: @link-spacing/4 @link-spacing; //top padding 1/4 the horizontal
-	margin: @link-spacing/4 @link-spacing; //top margin 1/4 the horizontal
-	border-radius: @link-border-radius;
+  padding: @link-spacing/4 @link-spacing; //top padding 1/4 the horizontal
+  margin: @link-spacing/4 @link-spacing; //top margin 1/4 the horizontal
+  border-radius: @link-border-radius;
 }
 
 //Custom colored links that background slides in on hover. 
 //Created from @link-custom set.
-each(@link-custom, { 
+each
+(
+@link-custom , {
 
-	.link-@{key} {
-		.link-styled();
+  .link-@{key} {
+    .link-styled();
 
-		text-decoration: @link-styled-decoration;
-		background: linear-gradient(to right, #colors[$@key] 50%, transparent 50%);
-  		background-size: 200% 100%;
-  		background-position: right bottom;
-  		transition: @link-styled-transition;
+    text-decoration: @link-styled-decoration;
+    background: linear-gradient(to right, #colors[$ @key ] 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: @link-styled-transition;
 
-		&:hover {
-			text-decoration: @link-styled-hover-decoration;
-  			background-position: left bottom;
-    		color: #colors[$@value]; 
-  			.box-shadow();
-		}
-	}
-});
+    &:hover {
+      text-decoration: @link-styled-hover-decoration;
+      background-position: left bottom;
+      color: #colors[$ @value ];
+      .box-shadow();
+    }
+  }
+} )
+;

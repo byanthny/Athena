@@ -6,27 +6,27 @@
 
 //Color Scheme change to single variables
 #colors() {
-	white: #ffffff;
-	offwhite: #f9f9f9;
-	pure-black: #000000;
-	black: #262626;
-	blue: #668ed8;
-	purple: #8b8bd3;
-	red: #b46565;
-	pink: #eebfec;
-	teal: #8ac0c7;
-	orange: #d8a166;
+  white: #ffffff;
+  offwhite: #f9f9f9;
+  pure-black: #000000;
+  black: #262626;
+  blue: #668ed8;
+  purple: #8b8bd3;
+  red: #b46565;
+  pink: #eebfec;
+  teal: #8ac0c7;
+  orange: #d8a166;
 }
 
 //Gradients
 @grad-deg: 20deg; //Gradient Degree
 
 #gradients() {
-	pink-orange: linear-gradient(@grad-deg, #FF8993, #FEC180);
-	yellow-magenta: linear-gradient(@grad-deg, #f7ff00, #db36a4); //uiGradients
-	purple-white: linear-gradient(@grad-deg, #BA5370, #F4E2D8); //uiGradients
-	teal-white: linear-gradient(@grad-deg, #4CA1AF, #C4E0E5); //uiGradients
-	black-grey: linear-gradient(@grad-deg, #000000, #434343); //uiGradients
+  pink-orange: linear-gradient(@grad-deg, #FF8993, #FEC180);
+  yellow-magenta: linear-gradient(@grad-deg, #f7ff00, #db36a4); //uiGradients
+  purple-white: linear-gradient(@grad-deg, #BA5370, #F4E2D8); //uiGradients
+  teal-white: linear-gradient(@grad-deg, #4CA1AF, #C4E0E5); //uiGradients
+  black-grey: linear-gradient(@grad-deg, #000000, #434343); //uiGradients
 }
 
 //Default Colors
@@ -68,13 +68,13 @@
 @body-font-italic-bold-location: '../fonts/OpenSansItalicBold.ttf';
 
 //Global Border Styling
-@border-width:  0.3125rem; //about 5px
-@border-radius:  0.9375rem; //about 15px
+@border-width: 0.3125rem; //about 5px
+@border-radius: 0.9375rem; //about 15px
 @border-style: solid;
 
 //Effects
-@box-shadow: 0px 0px 24px -7px rgba(0,0,0,.5); //used for eveything else
-@box-shadow-harsh: 3px 3px 5px -3px rgba(0,0,0,0.53); //used for links
+@box-shadow: 0px 0px 24px -7px rgba(0, 0, 0, .5); //used for eveything else
+@box-shadow-harsh: 3px 3px 5px -3px rgba(0, 0, 0, 0.53); //used for links
 @transition: all .5s;
 @transform-grow: scale(1.1);
 @fade-opacity: .9;
@@ -96,7 +96,7 @@
 
 //Gallery
 @gallery-cols: 3;
-@gallery-col-width: (1/@gallery-cols);//divide into gallery-cols sections
+@gallery-col-width: (1/@gallery-cols); //divide into gallery-cols sections
 
 //Links
 @link-border-radius: 0rem;
@@ -110,4 +110,4 @@
 @link-styled-transition: background .3s ease-out, color .3s ease-in, box-shadow .5s ease-out .3s;
 
 //For custom auto-created link styles
-@link-custom: {blue: white; purple: white; teal: white; black: white; white: black;}; //color names must be found in colors map. Format background-color: text color;
+@link-custom: { blue: white; purple: white; teal: white; black: white; white: black; }; //color names must be found in colors map. Format background-color: text color;
