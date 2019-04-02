@@ -1,1 +1,16 @@
-//buttons todo
+//buttons
+each(@button-custom, {
+
+  .button-@{key} {
+    background-color: #colors[$@key];
+    color: #colors[$@value];
+    border: @link-border-width @border-style transparent; //uncomment to add border on hover
+    border-radius: @link-border-radius;
+
+    &:hover {
+      text-decoration: @button-custom-hover-decoration;
+      background-color: transparent; //darken by 10%
+      border-color: @value; //uncomment to add border on hover. Border color is the same as text color
+    }
+  }
+});
