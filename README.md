@@ -1,5 +1,5 @@
 <p align="center">
-<img src="site/imgs/logo.svg" width="250"/>
+<img src="docs/imgs/logo.svg" width="250"/>
 </p>
 
 # Athena v0.0.1
